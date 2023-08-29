@@ -1,0 +1,49 @@
+﻿body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+
+.container {
+  text-align: center;
+}
+
+
+.heading {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+
+#play-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.confetti {
+  width: 100px;
+  height: 100px;
+  background-image: url('confetti.png');
+  background-size: cover;
+  animation: confettiAnimation 3s infinite;
+}
+
+
+@keyframes confettiAnimation {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
